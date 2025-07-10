@@ -1,12 +1,12 @@
-# 🧠 Hardware-Aware Model Optimization for Edge Inference
+# Hardware-Aware Model Optimization for Edge Inference
 
-## 📌 Overview
+## Overview
 
 This project demonstrates the end-to-end development of a lightweight, hardware-efficient image classification pipeline optimized for deployment on resource-constrained edge devices. We use **PyTorch** for model development, **ONNX** for interoperability, and **OpenCV DNN** for simulating real-world edge inference.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Train a Convolutional Neural Network (CNN) using PyTorch on CIFAR-10.
 - Convert the model to ONNX for hardware-friendly deployment.
@@ -17,7 +17,7 @@ This project demonstrates the end-to-end development of a lightweight, hardware-
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 | Component       | Usage                                    |
 |-----------------|------------------------------------------|
@@ -30,7 +30,7 @@ This project demonstrates the end-to-end development of a lightweight, hardware-
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 hardware_aware_optimization/
@@ -51,7 +51,7 @@ hardware_aware_optimization/
 
 ---
 
-## 🧪 How to Run (Google Colab Recommended)
+##  How to Run (Google Colab Recommended)
 
 1. **Train the model:**  
    Run `1_train_model.ipynb` to train and save as `base_model.pt`.
@@ -64,7 +64,7 @@ hardware_aware_optimization/
 
 ---
 
-## 📈 Results Summary
+##  Results Summary
 
 | Model        | Accuracy (%) | Size (MB) | Inference Time (ms) |
 |--------------|-------------|-----------|---------------------|
@@ -75,7 +75,7 @@ hardware_aware_optimization/
 
 ---
 
-## 💡 Pruning : Impact on ASIC/FPGA
+##  Pruning : Impact on ASIC/FPGA
 
 **Pruning** removes redundant weights/filters, reducing model size and compute requirements. On ASICs and FPGAs, this can:
 - Lower the number of required multipliers/adders, reducing silicon area and power consumption.
@@ -91,13 +91,13 @@ hardware_aware_optimization/
 
 ---
 
-## 🚀 Future Work
+##  Future Work
 
 - **Deploy to custom hardware:** Export and deploy the ONNX model to platforms such as NVIDIA Jetson, Google Coral, or FPGA/ASIC prototypes (e.g., via hls4ml or Vitis AI).
 
 ---
 
-## 📦 Installation
+## Installation
 
 You can run everything in Colab without local setup.  
 If running locally:
